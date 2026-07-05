@@ -1,0 +1,539 @@
+.tt-showcase {
+  --tt-ok: #46603a;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tt-showcase-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--cream);
+  max-width: 24ch;
+  margin: 0;
+}
+.tt-showcase-lede {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--cream-dim);
+  max-width: 62ch;
+  margin: 0 0 10px;
+}
+
+/* ---------------- panels ---------------- */
+.tt-panel {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 28px 24px;
+}
+.tt-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin: 0 0 3px;
+}
+.tt-panel-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.005em;
+  color: var(--cream);
+  margin: 0 0 20px;
+}
+.tt-calc-note {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--cream-dim);
+  max-width: 62ch;
+  margin: -10px 0 22px;
+}
+
+/* ---------------- architecture + hot branch ---------------- */
+.tt-tenant-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tt-central {
+  width: 210px;
+  padding: 13px 12px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--bg-raised);
+  text-align: center;
+}
+.tt-central-role {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+}
+.tt-central-sub {
+  font-size: 11px;
+  color: var(--cream-faint);
+  margin-top: 3px;
+  line-height: 1.3;
+}
+.tt-trunk {
+  width: 2px;
+  height: 26px;
+  background: var(--border-strong);
+}
+.tt-branches {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 116px;
+  align-items: flex-start;
+}
+.tt-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100px;
+}
+.tt-branch-node {
+  width: 100%;
+  padding: 9px 6px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--bg-raised);
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+}
+.tt-db {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  color: var(--cream-faint);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.tt-db-cyl {
+  width: 32px;
+  height: 24px;
+  border: 1.5px solid var(--terracotta);
+  border-radius: 50% / 22%;
+  background: var(--terracotta-dim);
+  position: relative;
+}
+.tt-db-cyl::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  height: 6px;
+  border-bottom: 1.5px solid var(--terracotta);
+  border-radius: 50%;
+}
+.tt-branch.fresh .tt-branch-node {
+  border-color: var(--olive);
+  background: var(--olive-dim);
+  animation: tt-popin 0.4s ease;
+}
+.tt-branch.fresh .tt-db-cyl {
+  border-color: var(--olive);
+  background: var(--olive-dim);
+}
+
+.tt-branch-manages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 10px;
+  margin-top: 20px;
+}
+.tt-bm-lead {
+  font-size: 12px;
+  color: var(--cream-faint);
+  letter-spacing: 0.02em;
+}
+.tt-bm-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: center;
+}
+.tt-bm-chip {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  background: var(--terracotta-dim);
+  border-radius: 3px;
+  padding: 4px 9px;
+}
+@keyframes tt-popin {
+  from { opacity: 0; transform: translateY(10px) scale(0.9); }
+  to { opacity: 1; transform: none; }
+}
+
+.tt-add-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+.tt-add-btn {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background: var(--olive);
+  color: var(--bg);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+  flex-shrink: 0;
+}
+.tt-add-btn:hover { transform: translateY(-2px); }
+.tt-add-btn:disabled { opacity: 0.5; cursor: default; transform: none; }
+
+.tt-steps {
+  flex: 1;
+  min-width: 240px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  counter-reset: none;
+}
+.tt-step {
+  font-size: 13px;
+  color: var(--cream-faint);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  opacity: 0.4;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+.tt-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  flex-shrink: 0;
+  transition: background 0.3s ease;
+}
+.tt-step.done {
+  opacity: 1;
+  color: var(--cream-dim);
+}
+.tt-step.done .tt-dot { background: var(--terracotta); }
+.tt-step.final.done {
+  color: var(--tt-ok);
+  font-weight: 600;
+}
+.tt-step.final.done .tt-dot { background: var(--tt-ok); }
+
+.tt-badge-row { margin-top: 14px; }
+.tt-norestart {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tt-ok);
+  border: 1.5px solid var(--tt-ok);
+  border-radius: 3px;
+  padding: 5px 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.tt-norestart.show { opacity: 1; }
+
+/* ---------------- request flow ---------------- */
+.tt-flow {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  /* overflow-x:auto also clips the y-axis, which was cutting off the node
+     hover-lift — pad top & bottom so the lifted node has room */
+  padding: 10px 2px;
+}
+.tt-node-wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.tt-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 120px;
+  padding: 14px 8px;
+  border-radius: 4px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--bg-raised);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+  text-align: center;
+}
+.tt-node:hover { transform: translateY(-2px); }
+.tt-node.active {
+  border-color: var(--olive);
+  background: var(--olive-dim);
+}
+.tt-node-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--terracotta-dim);
+  color: var(--terracotta);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.tt-node.active .tt-node-icon {
+  background: var(--olive);
+  color: var(--bg);
+}
+.tt-node-label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--cream);
+  line-height: 1.2;
+}
+.tt-connector {
+  width: 30px;
+  height: 2px;
+  background: var(--border-strong);
+  flex-shrink: 0;
+}
+.tt-connector.active { background: var(--olive); }
+
+.tt-detail {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  min-height: 78px;
+}
+.tt-detail-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--olive);
+  margin: 0 0 8px;
+}
+.tt-detail-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--cream-dim);
+  max-width: 62ch;
+  margin: 0;
+}
+.tt-hint {
+  font-size: 12px;
+  color: var(--cream-faint);
+  margin: 14px 0 0;
+  font-style: italic;
+}
+
+/* ---------------- calculator ---------------- */
+.tt-calc {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 26px;
+  align-items: center;
+}
+.tt-calc-visual {
+  background: var(--bg-raised);
+  border: 1.5px solid var(--border-strong);
+  border-radius: 5px;
+  padding: 18px;
+  font-variant-numeric: tabular-nums;
+}
+.tt-calc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 6px 0;
+  font-size: 14px;
+}
+.tt-calc-k { color: var(--cream-faint); }
+.tt-calc-v {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--cream);
+}
+.tt-calc-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 8px 0;
+}
+.tt-calc-out {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 8px;
+}
+.tt-calc-out-k {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+.tt-calc-out-v {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--olive);
+  line-height: 1;
+}
+.tt-calc-out-unit { font-size: 15px; }
+.tt-calc-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tt-calc-benefits li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--cream-dim);
+  padding-left: 20px;
+  position: relative;
+}
+.tt-calc-benefits li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--terracotta);
+  font-weight: 700;
+}
+
+/* interactive inputs */
+.tt-calc-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 0;
+}
+.tt-calc-field .tt-calc-k {
+  font-size: 14px;
+}
+.tt-calc-input {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.tt-calc-input em {
+  font-style: normal;
+  font-size: 13px;
+  color: var(--cream-faint);
+}
+.tt-calc-visual input,
+.tt-calc-select {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--cream);
+  background: var(--bg);
+  border: 1.5px solid var(--border-strong);
+  border-radius: 4px;
+  padding: 5px 9px;
+}
+.tt-calc-visual input {
+  width: 74px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.tt-calc-select {
+  max-width: 200px;
+}
+.tt-calc-visual input:focus-visible,
+.tt-calc-select:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 1px;
+  border-color: var(--olive);
+}
+.tt-calc-products {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tt-calc-products li {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--cream);
+  line-height: 1.4;
+  padding: 7px 11px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.tt-calc-qty {
+  color: var(--terracotta);
+  font-weight: 700;
+}
+.tt-calc-bought {
+  font-size: 12px;
+  color: var(--cream-faint);
+  margin: 10px 0 0;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tt-branch.fresh .tt-branch-node,
+  .tt-node,
+  .tt-add-btn,
+  .tt-step,
+  .tt-dot,
+  .tt-norestart,
+  .tt-connector {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tt-panel { padding: 22px 16px; }
+  .tt-calc { grid-template-columns: 1fr; }
+}

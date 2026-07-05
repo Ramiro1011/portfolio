@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Display';
+  src: url('/fonts/BigShouldersText-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Body';
+  src: url('/fonts/Archivo-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* TRIAL — cream-dominant variant with bordó + marrón details, for comparison
+     against the dark bordó-dominant default. Original dark values:
+     --bg:#170b0b --bg-rgb:23,11,11 --bg-raised:#241111 --bg-raised-2:#2f1616
+     --cream:#efe6d3 --olive:#8a9e5c --terracotta:#d17a3f
+     --border:rgba(239,230,211,.14) --border-strong:rgba(239,230,211,.26) */
+  --bg: #efe6d3;
+  --bg-rgb: 239, 230, 211;
+  --bg-raised: #e6d8ba;
+  --bg-raised-2: #ddc9a3;
+  --cream: #2a1512;
+  --cream-dim: rgba(42, 21, 18, 0.72);
+  --cream-faint: rgba(42, 21, 18, 0.55);
+
+  /* bordó as primary accent, marrón (brown) as secondary — per feedback */
+  --olive: #7a2430;
+  --olive-dim: rgba(122, 36, 48, 0.14);
+  --terracotta: #8a5a35;
+  --terracotta-dim: rgba(138, 90, 53, 0.16);
+
+  --border: rgba(42, 21, 18, 0.16);
+  --border-strong: rgba(42, 21, 18, 0.3);
+
+  /* fixed dark scrim for photo overlays — independent of theme, a light veil
+     over a photo never gives enough contrast for text on top of it */
+  --scrim-rgb: 23, 11, 11;
+
+  --font-display: 'Display', 'Arial Narrow', sans-serif;
+  --font-body: 'Body', system-ui, sans-serif;
+
+  --container: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--olive-dim);
+  color: var(--olive);
+}
+
+:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 13px;
+  color: var(--olive);
+}
+
+.section,
+#top {
+  scroll-margin-top: 88px;
+}
+
+.section {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 96px 48px;
+}
+
+.footer {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 32px 48px 48px;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  color: var(--cream-faint);
+}
+
+
+.section-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin: 0 0 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding: 64px 24px;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

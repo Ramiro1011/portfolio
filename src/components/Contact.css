@@ -1,0 +1,52 @@
+.contact-pitch {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--cream);
+  max-width: 46ch;
+  margin-bottom: 44px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border-top: 1px solid var(--border);
+}
+
+.contact-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 20px 4px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--cream);
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--olive);
+  padding-left: 12px;
+}
+
+.contact-link-label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream-faint);
+}
+
+.contact-link-value {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .contact-link {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

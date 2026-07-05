@@ -1,0 +1,119 @@
+.hero {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 160px 48px 64px;
+}
+
+.hero-location {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 13px;
+  color: var(--cream-faint);
+  margin: 0 0 8px;
+}
+
+.hero-title {
+  font-size: clamp(56px, 9vw, 108px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  color: var(--cream);
+  margin: 14px 0 6px;
+}
+
+.hero-role {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--terracotta);
+  margin-bottom: 28px;
+}
+
+.hero-lead {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(20px, 2.6vw, 26px);
+  line-height: 1.2;
+  color: var(--cream);
+  max-width: 44ch;
+  margin: 0 0 18px;
+}
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero-points li {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--cream-dim);
+  padding-left: 22px;
+  position: relative;
+}
+.hero-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--terracotta);
+}
+.hero-close {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--cream-dim);
+  max-width: 52ch;
+  margin: 0 0 40px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  padding: 13px 26px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.2s ease, border-color 0.2s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--olive);
+  color: var(--bg);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--cream);
+}
+.btn-ghost:hover {
+  border-color: var(--olive);
+  color: var(--olive);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 120px 24px 48px;
+  }
+}
