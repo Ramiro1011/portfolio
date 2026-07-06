@@ -42,7 +42,7 @@ export default function Stack() {
           >
             <div className="stack-layer-head">
               <span className="stack-layer-name">{layer.name}</span>
-              {layer.primary && (
+              {layer.primary && stack.primaryTag && (
                 <span className="stack-layer-tag">{stack.primaryTag}</span>
               )}
             </div>

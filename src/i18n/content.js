@@ -36,7 +36,6 @@ export const content = {
       intro: "The tools I reach for, laid out by where they live in a system.",
       filterLabel: "Light up the stack of:",
       hint: "Hover a project to see the tools it's built from, layer by layer.",
-      primaryTag: "· my core",
       projects: [
         { id: "consultorio", label: "Consultorio" },
         { id: "tinta", label: "Tinta Total" },
@@ -290,7 +289,6 @@ export const content = {
       intro: "Las herramientas que uso, dispuestas por dónde viven en un sistema.",
       filterLabel: "Iluminá el stack de:",
       hint: "Pasá por un proyecto para ver, capa por capa, con qué está hecho.",
-      primaryTag: "· lo mío",
       projects: [
         { id: "consultorio", label: "Consultorio" },
         { id: "tinta", label: "Tinta Total" },
