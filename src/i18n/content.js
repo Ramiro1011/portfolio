@@ -107,8 +107,8 @@ export const content = {
           gallery: {
             hint: "Pick a view",
             shots: [
-              { src: "/consultorio/agenda-dia.png", label: "Day agenda · a professional's appointments", alt: "Daily agenda with booked appointments, showing completed, no-show and reserved states", path: "consultorio / agenda / día", theme: "Light" },
               { src: "/consultorio/panel.png", label: "Dashboard", alt: "Dashboard with appointment, patient and professional KPIs", path: "consultorio / inicio", theme: "Light" },
+              { src: "/consultorio/agenda-dia.png", label: "Day agenda · a professional's appointments", alt: "Daily agenda with booked appointments, showing completed, no-show and reserved states", path: "consultorio / agenda / día", theme: "Light" },
               { src: "/consultorio/calendario.png", label: "Monthly calendar", alt: "Monthly agenda calendar for a professional", path: "consultorio / agenda", theme: "Light" },
               { src: "/consultorio/pacientes.png", label: "Patients", alt: "Patient list with insurance and phone number", path: "consultorio / pacientes", theme: "Light" },
               { src: "/consultorio/profesionales.png", label: "Professionals", alt: "Professionals list with specialties and license numbers", path: "consultorio / profesionales", theme: "Light" },
@@ -360,8 +360,8 @@ export const content = {
           gallery: {
             hint: "Elegí una vista",
             shots: [
-              { src: "/consultorio/agenda-dia.png", label: "Agenda del día · turnos del profesional", alt: "Agenda diaria con turnos asignados, mostrando estados completado, ausente y reservado", path: "consultorio / agenda / día", theme: "Claro" },
               { src: "/consultorio/panel.png", label: "Panel de control", alt: "Panel de control con métricas de turnos, pacientes y profesionales", path: "consultorio / inicio", theme: "Claro" },
+              { src: "/consultorio/agenda-dia.png", label: "Agenda del día · turnos del profesional", alt: "Agenda diaria con turnos asignados, mostrando estados completado, ausente y reservado", path: "consultorio / agenda / día", theme: "Claro" },
               { src: "/consultorio/calendario.png", label: "Calendario mensual", alt: "Calendario mensual de la agenda de un profesional", path: "consultorio / agenda", theme: "Claro" },
               { src: "/consultorio/pacientes.png", label: "Pacientes", alt: "Listado de pacientes con obra social y teléfono", path: "consultorio / pacientes", theme: "Claro" },
               { src: "/consultorio/profesionales.png", label: "Profesionales", alt: "Listado de profesionales con especialidades y matrículas", path: "consultorio / profesionales", theme: "Claro" },
