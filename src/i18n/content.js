@@ -26,9 +26,8 @@ export const content = {
     about: {
       label: "01 · About",
       paragraphs: [
-        "I'm a Software Development technician (UADE, class of 2026). Most of what I actually know I learned by shipping real things and keeping them honest once real users and real data depended on them.",
-        "Backend is where I feel most at home. What pulls me in is the decisions that never show up in a demo: how errors behave in production versus dev, how a schema migrates safely, what a DTO is really protecting. I build the frontend too, whatever the project needs, from a React SPA to server-rendered Thymeleaf.",
-        "So far that's three systems taken end to end: a multi-tenant SaaS for paint-store chains (my thesis), a system for a medical practice that manages professionals, patients, schedules, appointments and PDF receipts, and a web that runs a furniture store's product and price catalog every day. Each one taught me something the previous couldn't.",
+        "Backend is where I feel most at home. What pulls me in is the decisions that never show up in a demo: how errors behave in production versus dev, how a schema migrates safely, what a DTO is really protecting. I build the frontend too, whatever the project needs.",
+        "I'm a Software Development technician (UADE, 2026), but most of what I actually know I learned by building systems that other people ended up using, and keeping them running when something broke with real data inside. I care less about whether something merely works, and more about understanding why it's built the way it is.",
       ],
     },
     stack: {
@@ -279,9 +278,8 @@ export const content = {
     about: {
       label: "01 · Sobre mí",
       paragraphs: [
-        "Soy técnico en Desarrollo de Software (UADE, promoción 2026). La mayor parte de lo que realmente sé la aprendí construyendo cosas de verdad y sosteniéndolas cuando usuarios y datos reales dependían de ellas.",
-        "El backend es donde me siento más cómodo. Lo que me atrapa son las decisiones que nunca se ven en una demo: cómo se comportan los errores en producción y en dev, cómo migra un schema sin romper nada, qué está protegiendo realmente un DTO. También hago el frontend, lo que el proyecto necesite, desde una SPA en React hasta vistas server-side con Thymeleaf.",
-        "Hasta ahora son tres sistemas llevados de punta a punta: un SaaS multi-tenant para cadenas de pinturerías (mi tesis), un sistema para un consultorio médico que gestiona profesionales, pacientes, agendas, turnos y comprobantes en PDF, y una web que administra el catálogo de productos y precios de una mueblería todos los días. Cada uno me enseñó algo que el anterior no podía.",
+        "El backend es donde me siento en casa. Lo que me atrapa son las decisiones que no se ven en una demo: cómo se comportan los errores en producción y en dev, cómo migra un schema sin romper nada, qué está protegiendo de verdad un DTO. El frontend lo hago también, lo que el proyecto pida.",
+        "Soy técnico en Desarrollo de Software (UADE, 2026), pero casi todo lo que sé lo aprendí construyendo sistemas que otras personas terminaron usando, y sosteniéndolos cuando algo fallaba con datos reales adentro. Me importa menos que algo simplemente ande, y más entender por qué está hecho así.",
       ],
     },
     stack: {
