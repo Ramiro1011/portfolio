@@ -220,9 +220,10 @@ export const content = {
             "An online catalog for a furniture store, with a full admin panel: supplier management, bulk price increases, and a price-change history. In production today, the store's own staff use it every day to manage the catalog. Visitors browse and contact the store on WhatsApp, no cart, no checkout, by design.",
           decisions: [
             "SvelteKit 5 + Vite, deployed on Cloudflare Workers",
+            "The public site reads a static catalog JSON generated from Firestore; only the admin panel touches Firestore live, and publishing regenerates that JSON and redeploys.",
             "Firebase Firestore + Auth for data and the single-admin login",
             "Automated daily Firestore backup via GitHub Actions",
-            "sharp for image processing at upload time",
+            "Cloudinary for image uploads (unsigned preset) and delivery",
           ],
           tags: ["SvelteKit", "Firebase", "Vite", "GitHub Actions"],
           links: {
@@ -472,9 +473,10 @@ export const content = {
             "Catálogo online para una mueblería, con panel de administración completo: gestión de proveedores, aumento masivo de precios e historial de cambios de precio. En producción hoy, el personal de la mueblería lo usa todos los días para gestionar el catálogo. Los visitantes navegan y consultan por WhatsApp, sin carrito ni checkout, a propósito.",
           decisions: [
             "SvelteKit 5 + Vite, desplegado en Cloudflare Workers",
+            "El sitio público lee un JSON de catálogo estático generado desde Firestore; solo el panel de admin toca Firestore en vivo, y al publicar se regenera ese JSON y se redeploya.",
             "Firebase Firestore + Auth para los datos y el login del único admin",
             "Backup diario automático de Firestore vía GitHub Actions",
-            "sharp para procesamiento de imágenes al subir productos",
+            "Cloudinary para la subida de imágenes (preset unsigned) y su entrega",
           ],
           tags: ["SvelteKit", "Firebase", "Vite", "GitHub Actions"],
           links: {
