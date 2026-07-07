@@ -26,8 +26,8 @@ export const content = {
     about: {
       label: "01 · About",
       paragraphs: [
-        "Backend is where I feel most at home. What pulls me in is the decisions that never show up in a demo: how errors behave in production versus dev, how a schema migrates safely, what a DTO is really protecting. I build the frontend too, whatever the project needs.",
         "I'm a Software Development technician (UADE, 2026), but most of what I actually know I learned by building systems that other people ended up using, and keeping them running when something broke with real data inside. I care less about whether something merely works, and more about understanding why it's built the way it is.",
+        "Backend is my strong suit. What pulls me in is the decisions that never show up in a demo: how errors behave in production versus dev, how a schema migrates safely, what a DTO is really protecting. I build the frontend too, whatever the project needs.",
       ],
     },
     stack: {
@@ -278,8 +278,8 @@ export const content = {
     about: {
       label: "01 · Sobre mí",
       paragraphs: [
-        "El backend es donde me siento en casa. Lo que me atrapa son las decisiones que no se ven en una demo: cómo se comportan los errores en producción y en dev, cómo migra un schema sin romper nada, qué está protegiendo de verdad un DTO. El frontend lo hago también, lo que el proyecto pida.",
         "Soy técnico en Desarrollo de Software (UADE, 2026), pero casi todo lo que sé lo aprendí construyendo sistemas que otras personas terminaron usando, y sosteniéndolos cuando algo fallaba con datos reales adentro. Me importa menos que algo simplemente ande, y más entender por qué está hecho así.",
+        "Mi punto fuerte es el backend. Lo que me atrapa son las decisiones que no se ven en una demo: cómo se comportan los errores en producción y en dev, cómo migra un schema sin romper nada, qué está protegiendo de verdad un DTO. El frontend lo hago también, lo que el proyecto pida.",
       ],
     },
     stack: {
