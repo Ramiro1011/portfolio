@@ -219,7 +219,7 @@ export const content = {
           description:
             "An online catalog for a furniture store, with a full admin panel: supplier management, bulk price increases, and a price-change history. In production today, the store's own staff use it every day to manage the catalog. Visitors browse and contact the store on WhatsApp, no cart, no checkout, by design.",
           decisions: [
-            "SvelteKit 5 + Vite, deployed static on Netlify",
+            "SvelteKit 5 + Vite, deployed on Cloudflare Workers",
             "Firebase Firestore + Auth for data and the single-admin login",
             "Automated daily Firestore backup via GitHub Actions",
             "sharp for image processing at upload time",
@@ -230,7 +230,7 @@ export const content = {
           },
           demoCard: {
             src: "/muebles/catalogo.png",
-            href: "https://muebles-rafaela.netlify.app/catalogo",
+            href: "https://muebles-rafaela.webstudio-ra.workers.dev/catalogo",
             label: "Open live site",
             alt: "Muebles Rafaela product catalog: category sidebar with counts, product cards with images and prices",
           },
@@ -471,7 +471,7 @@ export const content = {
           description:
             "Catálogo online para una mueblería, con panel de administración completo: gestión de proveedores, aumento masivo de precios e historial de cambios de precio. En producción hoy, el personal de la mueblería lo usa todos los días para gestionar el catálogo. Los visitantes navegan y consultan por WhatsApp, sin carrito ni checkout, a propósito.",
           decisions: [
-            "SvelteKit 5 + Vite, desplegado como sitio estático en Netlify",
+            "SvelteKit 5 + Vite, desplegado en Cloudflare Workers",
             "Firebase Firestore + Auth para los datos y el login del único admin",
             "Backup diario automático de Firestore vía GitHub Actions",
             "sharp para procesamiento de imágenes al subir productos",
@@ -482,7 +482,7 @@ export const content = {
           },
           demoCard: {
             src: "/muebles/catalogo.png",
-            href: "https://muebles-rafaela.netlify.app/catalogo",
+            href: "https://muebles-rafaela.webstudio-ra.workers.dev/catalogo",
             label: "Abrir sitio en vivo",
             alt: "Catálogo de Muebles Rafaela: barra de categorías con conteos, tarjetas de producto con imágenes y precios",
           },
