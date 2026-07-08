@@ -13,10 +13,10 @@ export const content = {
       location: "Buenos Aires, Argentina",
       title: "Ramiro Arago",
       role: "Backend Developer · Java, Spring Boot, React",
-      pitchLead: "Two years building real systems end to end.",
+      pitchLead: "Two years building systems end to end.",
       pitchPoints: [
-        "A multi-tenant SaaS as my thesis.",
-        "A system in production today for a real client.",
+        "A multi-tenant SaaS, as my thesis.",
+        "Two systems in production, used by real clients.",
       ],
       pitchClose:
         "I care about the decisions behind the code as much as the code itself.",
@@ -266,10 +266,10 @@ export const content = {
       location: "Buenos Aires, Argentina",
       title: "Ramiro Arago",
       role: "Backend Developer · Java, Spring Boot, React",
-      pitchLead: "Dos años construyendo sistemas reales de punta a punta.",
+      pitchLead: "Dos años construyendo sistemas de punta a punta.",
       pitchPoints: [
-        "Un SaaS multi-tenant como proyecto de tesis.",
-        "Un sistema en producción hoy para un cliente real.",
+        "Un SaaS multi-tenant, como proyecto de tesis.",
+        "Dos sistemas en producción, usados por clientes reales.",
       ],
       pitchClose:
         "Me importan tanto las decisiones detrás del código como el código en sí.",
