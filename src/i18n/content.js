@@ -131,7 +131,9 @@ export const content = {
             "React 19 + Vite frontend with an Axios interceptor that refreshes the JWT proactively, before it expires",
           ],
           tags: ["Java", "Spring Boot", "MySQL", "JWT", "React", "Multi-tenant"],
-          links: {},
+          links: {
+            code: "https://github.com/Ramiro1011/Tinta-Total",
+          },
           gallery: {
             note: "Interface design · high-fidelity wireframes of the system.",
             hint: "Pick a screen",
@@ -384,7 +386,9 @@ export const content = {
             "Frontend en React 19 + Vite con un interceptor de Axios que renueva el JWT de forma proactiva, antes de que expire",
           ],
           tags: ["Java", "Spring Boot", "MySQL", "JWT", "React", "Multi-tenant"],
-          links: {},
+          links: {
+            code: "https://github.com/Ramiro1011/Tinta-Total",
+          },
           gallery: {
             note: "Diseño de interfaz · wireframes de alta fidelidad del sistema.",
             hint: "Elegí una pantalla",
